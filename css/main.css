@@ -1,18 +1,18 @@
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
 
 body  {
-    font-family: 'Calibri', sans-serif;
-    font-size: 0.9em;
+    font-size: 1em;
+    font-family: 'Scada', sans-serif;
 }
 
 body a {
     text-decoration: none;
-    color: orange;
+    color: #e88605;
 }
 body a:hover {
     text-decoration: none;
-    color: #00CC00;
+    color: #05a354;
 }
 
 /*header*/
@@ -20,52 +20,108 @@ body a:hover {
 h1 {
     display: none;
 }
+h2 {
+  font-size: 1.5em;
+  color: #05a354;
+  margin-bottom: 0.5em;
+}
 #logo {
     margin-top: 3em;
-    width: 25%;
 }
 header { 
     width: 80%;
-    height: 160px;
-    /*border: 1px solid red;*/
     margin: 0 auto;
-}
-header li { 
-    display: inline-block;
-}
-header ul {
-    float: right;
-}
-header li:after {
-  content: "|";
-  color: orange;
-  padding: 0 0.7em;
-}
-header li.last:after {
-  display: none;
+    overflow: hidden;
 }
 
 .main-nav {
-    width: 68%;
-    height: 2em;
-    /*border: 1px solid red;*/
+    margin-left: 1em;
     float: right;
     margin-top: 5em;
 }
 .main-nav li {
     margin-top: 0%;
     padding-bottom: 0.8em;
+    display: inline-block;
+}
+.main-nav li:after {
+  content: "|";
+  color: #e88605;
+  padding: 0 0.3em;
+}
+.main-nav li.last:after {
+  display: none;
 }
 
 /*content*/
  
 .wrapper {
-    width: 70%;
-    height: 500px;
-    margin: 0 auto;
+    font-family: 'Metrophobic', sans-serif;
+    font-size: 0.9em;
+    color: #e88605;
+    width: 68%;
+    margin: 2em auto;
     background-color: #E6E6E6;
-    overflow: none;
+    overflow: hidden;
     position: relative;
+}
+.wrapper ul {
+    max-width: 327px;
+}
+.wrapper li {
+    padding-top: 0.8em;
+}
+.wrapper img:hover {
+    opacity: 1;
+}
+.mini-wrapper {
+    width: 30%;
+    margin-left: 10%;
+    padding: 2.3em;
+    background-color: white;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: absolute;
+    left: 7px;
+    top: 0;
+    -webkit-box-shadow: 0 3px 7px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 3px 7px 0 rgba(0,0,0,0.4);
+}
+.mini-wrapper p {
+    line-height: 1.5em;
+}    
+.mini-wrapper li {
+    margin-left: 1em;
+}
+.mini-wrapper-down {   
+    width: 30%;
+    margin-left: 10%;
+    padding: 2.3em;
+    background-color: white;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    position: absolute;
+    left: 3px;
+    bottom: 0;
+    -webkit-box-shadow: 0 3px 7px 0 rgba(0,0,0,0.4);
+    box-shadow: 0 3px 7px 0 rgba(0,0,0,0.4);
+}
+.mini-wrapper-down p {
+    line-height: 1.5em;
+    margin-top: 1em;
+} 
+.mini-wrapper-down li {
+    margin-left: 1em;
+} 
+.menu {
+    margin-left: 2em;
+    list-style: none;
+}
+.menu a{
+    opacity: 1;
+}
+.menu a:hover{
+    opacity: 0.7;
 }
 .img-side {
     float: right;
@@ -73,34 +129,29 @@ header li.last:after {
     right: 0;
     top: 0;
 }
-.wrapper ul {
-    max-width: 327px;
+.contact ul{
+    margin-left: 500px;
 }
-.wrapper li {
-    padding-top: 1.5em;
-}
-.wrapper img {
-    margin-left: 1em;
-}
+
 /*footer*/
 
 footer {
-    width: 70%;
+    width: 68%;
     font-size: 1em;
-    border: 1px solid red;
     margin: 0 auto;
-    padding-top: 2em;
+    overflow: hidden;
 }
 
 .contact {
     text-transform: uppercase;
     margin-top: 0.5em;
     width: 
-
+}
+.networks{
+    float: right;
 }
 .networks li {
     display: inline-block;
-    margin-top: 0.5em;
     float: right;
 }
 .networks a {
@@ -117,17 +168,25 @@ footer {
     display: none;
 }
 .networks a.facebook {
-    background-position: 0px 0px;
+    background-position: 0px -5px;
 }
 .networks a.twitter {
-    background-position: 0px -70px;
+    background-position: 0px -75px;
 }
 .networks a.e-mail {
-    background-position: 0px -140px;
+    background-position: 0px -145px;
 }
 
-
 /*media queries*/
+
+@media screen and (max-width: 1235px){
+    .main-nav{
+        float: none;
+        margin-top: 2em;
+        width: 100%;
+        text-align: center;
+    }
+}
 
 @media screen and (max-width: 889px) {
   .img-side {
