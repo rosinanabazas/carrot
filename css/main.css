@@ -55,7 +55,6 @@ header {
  
 .wrapper {
     font-family: 'Metrophobic', sans-serif;
-    background: #F0F0E9;
     font-size: 0.9em;
     color: #e88605;
     width: 68%;
@@ -196,9 +195,12 @@ footer {
         text-align: center;
     }
 }
-
 @media screen and (max-width: 889px) {
-  .img-side {
-    display: none;
+    .img-side {
+        display: none;
   }
+@media screen and (max-width: 397px) {
+    #logo {
+        width: 80%;
+        text-align: center;
 }
